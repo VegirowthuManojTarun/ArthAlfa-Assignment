@@ -1,4 +1,3 @@
-// src/components/ReplaceSection.js
 import React, { useState } from "react";
 
 const ReplaceSection = ({ text, setText }) => {
@@ -7,7 +6,8 @@ const ReplaceSection = ({ text, setText }) => {
 
   const handleReplace = () => {
     if (searchString.trim() === "") return;
-    const newText = text.split(searchString).join(replaceString);
+    const regex = new RegExp(searchString, 'gi');
+    const newText = text.replace(regex, `<span class="highlight">${replaceString}</span>`);
     setText(newText);
   };
 

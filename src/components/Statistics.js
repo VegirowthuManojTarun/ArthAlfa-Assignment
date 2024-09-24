@@ -1,4 +1,3 @@
-// src/components/Statistics.js
 import React from "react";
 
 const Statistics = ({ uniqueWordsCount, characterCount }) => {
