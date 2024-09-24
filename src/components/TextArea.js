@@ -7,6 +7,7 @@ const TextArea = ({ text, setText }) => {
       value={text}
       onChange={(e) => setText(e.target.value)}
       placeholder="Type your text here..."
+      className="text-area"
     />
   );
 };

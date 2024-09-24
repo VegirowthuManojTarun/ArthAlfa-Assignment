@@ -6,6 +6,7 @@ const ReplaceSection = ({ text, setText }) => {
   const [replaceString, setReplaceString] = useState("");
 
   const handleReplace = () => {
+    if (searchString.trim() === "") return;
     const newText = text.split(searchString).join(replaceString);
     setText(newText);
   };
@@ -17,12 +18,14 @@ const ReplaceSection = ({ text, setText }) => {
         value={searchString}
         onChange={(e) => setSearchString(e.target.value)}
         placeholder="String to search for"
+        className="replace-input"
       />
       <input
         type="text"
         value={replaceString}
         onChange={(e) => setReplaceString(e.target.value)}
         placeholder="String to replace with"
+        className="replace-input"
       />
       <button onClick={handleReplace}>Replace All</button>
     </div>
