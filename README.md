@@ -1,3 +1,35 @@
+# Real-Time Text Analysis and String Replacement
+
+This project provides a real-time text analysis and string replacement tool built with React. It includes features like unique word count, character count, and the ability to replace and highlight text within the editor.
+
+## Features
+
+- Real-time text analysis
+  - Unique word count
+  - Character count (excluding spaces and punctuation)
+- String replacement with highlighting
+- Responsive and visually appealing UI
+
+## Bonus Features
+
+- Highlighting replaced text within the editor
+- Responsive design for better user experience on different devices
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/your-repo-name.git
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
